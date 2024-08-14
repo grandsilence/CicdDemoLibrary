@@ -7,4 +7,9 @@ public sealed class Calculator : ICalculator
     public int Sub(int a, int b) => a - b;
 
     public int Mul(int a, int b) => a * b;
+
+    public void About()
+    {
+        Console.WriteLine("About developer...");
+    }
 }
