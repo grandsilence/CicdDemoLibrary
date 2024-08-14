@@ -8,7 +8,7 @@
 
     <!-- Version -->
     <PropertyGroup>
-        <Version>1.0.1.0</Version>
+        <Version>1.0.3.0</Version>
         <AssemblyVersion>$(Version)</AssemblyVersion>
         <FileVersion>$(Version)</FileVersion>
     </PropertyGroup>
@@ -23,6 +23,9 @@
     <PropertyGroup>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/grandsilence/CicdDemoLibrary</RepositoryUrl>
+        <Authors>Grand Silence</Authors>
+        <Company>Company Inc</Company>
     </PropertyGroup>
     <ItemGroup>
         <None Include="../README.md" Pack="true" PackagePath="\"/>

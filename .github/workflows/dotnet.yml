@@ -21,8 +21,10 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore -c Release
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal -c Release
+    - name: Pack
+      run: dotnet pack --no-build -c Release -o .
     - name: Push Package to NuGet.org
       run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_PACKAGE_TOKEN }} -s https://api.nuget.org/v3/index.json
